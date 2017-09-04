@@ -17,8 +17,9 @@ _Gaona.Assignment.Client.exe_ is already set up to call the remote endpoint addr
 - Start _Gaona.Assignment.exe_ file
 - Start _Gaona.Assignment.Client.exe_ file
 
-The client app will execute 4 tests, based on the binary files included in the project
+The client app will execute 5 tests, based on the binary files included in the project
 
+1. Send a payload bigger than the limit (1MB)
 1. Check if data is equal using an image file
 1. Check if data has different lenght using two image files
 1. Check if data has equal length but has differeces using two text files
