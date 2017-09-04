@@ -8,7 +8,7 @@
 ### App settings
 To run locally, _Gaona.Assignment.exe_ needs to have the following app settings defined
 - _StorageConnString_ in case you don't want to use the Azure Storage Emulator
-- _sgapikey_ A SendGrid API key for email sending (refer to improvements list)
+- _sgapikey_ A SendGrid API key for email sending ([refer to improvements list](https://github.com/pollirrata/assignment/wiki/Improvements))
 - _errormail_ The email address to send the errors
 
 _Gaona.Assignment.Client.exe_ is already set up to call the remote endpoint address. In case you want to run it locally set the _server_ setting to the desired value.
