@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gaona.Assigment.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Gaona.Assigment.Web.Controllers.DiffController">
+            <summary>
+            Controller with the endpoint methods to determine the diff
+            </summary>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Controllers.DiffController.#ctor">
+            <summary>
+            Default constructor required for the API
+            </summary>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Controllers.DiffController.#ctor(Gaona.Assignment.Data.IDataManager,Gaona.Assignment.Business.IDiffer)">
+            <summary>
+            Constructor intended for unit test
+            </summary>
+            <param name="dataManager">Data manager to be injected</param>
+            <param name="differ">Class used to perform the actual diffs</param>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Controllers.DiffController.Initialize">
+            <summary>
+            Initialize the data manager and the differ instances. This is called on each
+            action to ensure that if any error happens it gets caught by the global exception filter
+            </summary>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Controllers.DiffController.PostLeft(System.String,Gaona.Assigment.Web.Model.DiffRequest)">
+            <summary>
+            Set the left side for the diff process
+            </summary>
+            <param name="id">The id of the comparision</param>
+            <param name="request">JSON base64 encoded binary data</param>
+            <returns>HTTP Response</returns>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Controllers.DiffController.PostRight(System.String,Gaona.Assigment.Web.Model.DiffRequest)">
+            <summary>
+            Set the right side for the diff process
+            </summary>
+            <param name="id">The id of the comparision</param>
+            <param name="request">JSON base64 encoded binary data</param>
+            <returns>HTTP Response</returns>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Controllers.DiffController.ProcessInput(System.String,System.String,Gaona.Assigment.Web.Model.DiffRequest)">
+            <summary>
+            Process the input for the diff
+            </summary>
+            <param name="id">The id of the comparision</param>
+            <param name="side">left or right</param>
+            <param name="request">JSON base64 encoded binary data</param>
+            <returns>HTTP Response</returns>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Controllers.DiffController.GetDiff(System.String)">
+            <summary>
+            Process the diff of the inputs matching the ID
+            </summary>
+            <param name="id">The id of the diff comparision</param>
+            <returns>HTTP Response</returns>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Controllers.DiffController.GetError">
+            <summary>
+            Method for testing the exception handling process
+            </summary>
+            <returns>Prettyfied HTTP Response</returns>
+        </member>
+        <member name="T:Gaona.Assigment.Web.Filters.GlobalExceptionFilterAttribute">
+            <summary>
+            IMPROVEMENT
+            Global filter for catching and handling exceptions in the API
+            
+            IMPROVEMENT
+            Send an email whenever an exception is thrown
+            </summary>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Filters.GlobalExceptionFilterAttribute.OnExceptionAsync(System.Web.Http.Filters.HttpActionExecutedContext,System.Threading.CancellationToken)">
+            <summary>
+            The async exception handler
+            </summary>
+            <param name="actionExecutedContext">action context</param>
+            <param name="cancellationToken">token to cancell the async operations</param>
+            <returns></returns>
+        </member>
+        <member name="T:Gaona.Assigment.Web.Model.DiffRequest">
+            <summary>
+            Model of the diff JSON payload sent to the endpoints.
+            </summary>
+        </member>
+        <member name="P:Gaona.Assigment.Web.Model.DiffRequest.Data">
+            <summary>
+            The base64 string value for the encoded binary data
+            </summary>
+        </member>
+        <member name="T:Gaona.Assigment.Web.Middleware.PayloadSizeLimitMiddleware">
+            <summary>
+            IMPROVEMENT
+            Limits the size of the request to not exceed a certain amount of bytes
+            </summary>
+        </member>
+        <member name="F:Gaona.Assigment.Web.Middleware.PayloadSizeLimitMiddleware._limit">
+            <summary>
+            The request limit size in bytes
+            </summary>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Middleware.PayloadSizeLimitMiddleware.#ctor(Microsoft.Owin.OwinMiddleware,System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="next">The next component</param>
+            <param name="limit">Max length (bytes) of the request to accept</param>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Middleware.PayloadSizeLimitMiddleware.Invoke(Microsoft.Owin.IOwinContext)">
+            <summary>
+            Method to be invoked on the pipeline.
+            </summary>
+            <param name="context">The current owin context</param>
+            <returns></returns>
+        </member>
+        <member name="T:Gaona.Assigment.Web.Startup">
+            <summary>
+            My OWIN Startup class, where all the configuration is defined.
+            </summary>
+        </member>
+        <member name="M:Gaona.Assigment.Web.Startup.Configuration(Owin.IAppBuilder)">
+            <summary>
+            Defining the configuration for the project. This includes
+            - Adding middleware components
+            - Defining the routing 
+            - Setting the media type formatters
+            
+            and the following suggested IMPROVEMENTS
+            - Global exception filter
+            - Swagger docs
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

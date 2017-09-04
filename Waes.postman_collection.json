@@ -1,0 +1,562 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Waes",
+		"_postman_id": "6ebf0308-5a93-833f-cc16-628ead9a34d5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9999/v1/diff/id/left",
+			"request": {
+				"url": "http://localhost:9999/v1/diff/0001/left",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\": \"VGhlIGdyZWVuIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBibHVlIGZlbmNl\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "f8a41f23-94b9-41e0-b042-e5cdea4bcff3",
+					"name": "ID 0001",
+					"originalRequest": {
+						"url": "http://localhost:9999/v1/diff/0001/left",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": \"VGhlIGdyZWVuIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBibHVlIGZlbmNl\"\n}\n"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "58",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 31 Aug 2017 01:47:38 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "location",
+							"key": "location",
+							"value": "v1/diff/0001/left",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-HTTPAPI/2.0",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"responseTime": 28554,
+					"body": "\"VGhlIGdyZWVuIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBibHVlIGZlbmNl\""
+				},
+				{
+					"id": "7d4c8760-4156-4918-a57d-2e175af25c25",
+					"name": "ID 0002",
+					"originalRequest": {
+						"url": "http://localhost:9999/v1/diff/0002/left",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": \"VGhlIGJyb3duIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBncmF5IGZlbmNl\"\n}\n"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "58",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 31 Aug 2017 02:03:48 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "location",
+							"key": "location",
+							"value": "v1/diff/0002/left",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-HTTPAPI/2.0",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"responseTime": 109,
+					"body": "\"VGhlIGJyb3duIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBncmF5IGZlbmNl\""
+				},
+				{
+					"id": "49f5b741-6c58-4164-b897-3cedb7ac6470",
+					"name": "ID 0003",
+					"originalRequest": {
+						"url": "http://localhost:9999/v1/diff/0003/left",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": \"iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAMFBMVEX///+NmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqZMjrU7AAAAD3RSTlMAoEAQ8LAw0ODAYCBQkHCRjMcEAAAApElEQVR42r3S2w6DIBAE0O4uKDed///bZk1aGDC+NOm8GDjZDKivv2STHUASvUOL+CTbOhrQE7Z59lIp2iS4V+YIYK+9JZOq67dRAOjIvlGpKY6cABmWBxBGBlCmLmIu23zN3B6mA3efEwsQjE4a+d7jhtBJPdndukKI6/WmD1U9E0C+fLFbz6tTWoQnFunOMTV/sHNG10dnZqc/ZHXSNaquP+YNmD0L7UqbR+YAAAAASUVORK5CYII=\"\n}\n"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "414",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 31 Aug 2017 02:10:41 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "location",
+							"key": "location",
+							"value": "v1/diff/0003/left",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-HTTPAPI/2.0",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"responseTime": 298,
+					"body": "\"iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAMFBMVEX///+NmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqaNmqZMjrU7AAAAD3RSTlMAoEAQ8LAw0ODAYCBQkHCRjMcEAAAApElEQVR42r3S2w6DIBAE0O4uKDed///bZk1aGDC+NOm8GDjZDKivv2STHUASvUOL+CTbOhrQE7Z59lIp2iS4V+YIYK+9JZOq67dRAOjIvlGpKY6cABmWBxBGBlCmLmIu23zN3B6mA3efEwsQjE4a+d7jhtBJPdndukKI6/WmD1U9E0C+fLFbz6tTWoQnFunOMTV/sHNG10dnZqc/ZHXSNaquP+YNmD0L7UqbR+YAAAAASUVORK5CYII=\""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9999/v1/diff/id/right",
+			"request": {
+				"url": "http://localhost:9999/v1/diff/0002/right",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\": \"VGhlIGJyb3duIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBncmF5IGZlbmNl\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "92e3c550-c5c2-48ee-a9d1-289fd7d6346e",
+					"name": "ID 0001",
+					"originalRequest": {
+						"url": "http://localhost:9999/v1/diff/0001/right",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": \"VGhlIGJyb3duIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBncmF5IGZlbmNl\"\n}\n"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "58",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 31 Aug 2017 01:56:56 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "location",
+							"key": "location",
+							"value": "v1/diff/0001/right",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-HTTPAPI/2.0",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"responseTime": 146,
+					"body": "\"VGhlIGJyb3duIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBncmF5IGZlbmNl\""
+				},
+				{
+					"id": "8d13b5b8-3ec4-4d09-9f37-ba7a6dfa2b72",
+					"name": "ID 0002",
+					"originalRequest": {
+						"url": "http://localhost:9999/v1/diff/0002/right",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": \"VGhlIGJyb3duIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBncmF5IGZlbmNl\"\n}\n"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "58",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 31 Aug 2017 01:58:55 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "location",
+							"key": "location",
+							"value": "v1/diff/0002/right",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-HTTPAPI/2.0",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"responseTime": 84,
+					"body": "\"VGhlIGJyb3duIGZ4IGp1bXBzIG92ZXIgdGhlIGJpZyBncmF5IGZlbmNl\""
+				},
+				{
+					"id": "a9b5a7e8-7ee0-45ee-bd83-27e069a7a469",
+					"name": "ID 0003",
+					"originalRequest": {
+						"url": "http://localhost:9999/v1/diff/0003/right",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"warning": ""
+							},
+							{
+								"key": "",
+								"value": "",
+								"description": "",
+								"warning": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": \"iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAkFJREFUOBGllT1oFEEUx38zuxf1MGghQiqFCMFCK7WwEez8OBQLQRQLLSxEcpUE/Eij2EqIBIuQws4qIaK9pEgheB6ijVbiaWEhivFj1x3fG5zc7p17l4sDy8x77//+zLw3819DyXAzbE9+ccpAzcGYzCMCTZyjheG5hYVoI4/MJVb+RSH44nCzDKffmMBRF5JqMVq0JPmDsUxGV5g1hiwfLRC7KUaTjEUB7M6D+q2FdDHezFlzka8Bu0qspGnGshx7WwgOMgvRs3gTh0JppFSgx9edrpfUc8C+5AdzYTOe2Nd0wOMHgsLsOJ1OcUx9VruvjSoA8oYdylt915njjoKsXqle3Y8Oz2D3X4NoQ19SD3DscXfZa6XotZ4ZcZXo4C3icy8xO470hIZgaqhZvfzB0Ws2W3cRn3xMdHwehnf2gkplGdMd64ta87CjJ4jPv8IeuCE5vvdducqpkaQr0s/x+S3u/VNBFR5bO8uRxP7tw5a2t3zlfn4hW54kezEtlz8tBTpDK5ZoQ76+Tzh7/YDfS1dh5WMp4WrA0YilyPNy986sOjsW7lOTtHkP11rqiJSblQoLxt2nmn7njXRyoCaW0UrjnlTqHLUqGip9ZcBB/EKaSW0nNMffl796qnL5f8Nw09RpKoknVpH2eirSt25mw1xlnNsh3xOroSKteiq/nYchuJZZjy8buz40zoU8XvzdQ6XPq5QISne07dFGaU3D8dsR2Wje6FyrSqmg6NsX4IiIQKKXX+aGv1KXedeZE+w/BTKl4mGKsZwAAAAASUVORK5CYII=\"\n}\n"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "870",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 31 Aug 2017 02:11:09 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "location",
+							"key": "location",
+							"value": "v1/diff/0003/right",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-HTTPAPI/2.0",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"responseTime": 98,
+					"body": "\"iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAkFJREFUOBGllT1oFEEUx38zuxf1MGghQiqFCMFCK7WwEez8OBQLQRQLLSxEcpUE/Eij2EqIBIuQws4qIaK9pEgheB6ijVbiaWEhivFj1x3fG5zc7p17l4sDy8x77//+zLw3819DyXAzbE9+ccpAzcGYzCMCTZyjheG5hYVoI4/MJVb+RSH44nCzDKffmMBRF5JqMVq0JPmDsUxGV5g1hiwfLRC7KUaTjEUB7M6D+q2FdDHezFlzka8Bu0qspGnGshx7WwgOMgvRs3gTh0JppFSgx9edrpfUc8C+5AdzYTOe2Nd0wOMHgsLsOJ1OcUx9VruvjSoA8oYdylt915njjoKsXqle3Y8Oz2D3X4NoQ19SD3DscXfZa6XotZ4ZcZXo4C3icy8xO470hIZgaqhZvfzB0Ws2W3cRn3xMdHwehnf2gkplGdMd64ta87CjJ4jPv8IeuCE5vvdducqpkaQr0s/x+S3u/VNBFR5bO8uRxP7tw5a2t3zlfn4hW54kezEtlz8tBTpDK5ZoQ76+Tzh7/YDfS1dh5WMp4WrA0YilyPNy986sOjsW7lOTtHkP11rqiJSblQoLxt2nmn7njXRyoCaW0UrjnlTqHLUqGip9ZcBB/EKaSW0nNMffl796qnL5f8Nw09RpKoknVpH2eirSt25mw1xlnNsh3xOroSKteiq/nYchuJZZjy8buz40zoU8XvzdQ6XPq5QISne07dFGaU3D8dsR2Wje6FyrSqmg6NsX4IiIQKKXX+aGv1KXedeZE+w/BTKl4mGKsZwAAAAASUVORK5CYII=\""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9999/v1/diff/id",
+			"request": {
+				"url": "http://localhost:9999/v1/diff/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "ddb1f1d9-b2e8-4369-96b8-e108324c4cad",
+					"name": "ID 0001 - same size ",
+					"originalRequest": {
+						"url": "http://localhost:9999/v1/diff/0001",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "104",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 31 Aug 2017 01:59:29 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-HTTPAPI/2.0",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"responseTime": 116,
+					"body": "{\"Description\":\"diffs\",\"Locations\":[{\"Offset\":4,\"Size\":1},{\"Offset\":6,\"Size\":2},{\"Offset\":32,\"Size\":4}]}"
+				},
+				{
+					"id": "58b278b7-c23e-470e-9ec3-2b2c3c311adb",
+					"name": "ID 0002 - equal",
+					"originalRequest": {
+						"url": "http://localhost:9999/v1/diff/0002",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "40",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 31 Aug 2017 02:04:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-HTTPAPI/2.0",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"responseTime": 90,
+					"body": "{\"Description\":\"equal\",\"Locations\":null}"
+				},
+				{
+					"id": "aef70e31-0592-488b-9e8a-10f58231ed62",
+					"name": "ID 0003 - different size",
+					"originalRequest": {
+						"url": "http://localhost:9999/v1/diff/0003",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "49",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 31 Aug 2017 02:11:18 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-HTTPAPI/2.0",
+							"description": "A name for the server"
+						}
+					],
+					"cookie": [],
+					"responseTime": 103,
+					"body": "{\"Description\":\"different size\",\"Locations\":null}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:9999/v1/error",
+			"request": {
+				"url": "http://localhost:9999/v1/error",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
