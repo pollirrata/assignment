@@ -28,10 +28,10 @@ The client app will execute 5 tests, based on the binary files included in the p
 
 
 ### Using REST API tester
-- Start Assignment application
+- Start _Gaona.Assignment.exe_ application
 - Make the corresponding calls for the diff process
 
-An example of the calls I used is on Postman exported file
+An example of the calls I used is on Postman exported file, included in this repo
 
 
 
